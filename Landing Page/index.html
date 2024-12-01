@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="main-header">
+    <h1>Mark-It</h1>
+    <nav class="navbar">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="hero" class="hero-section">
+    <h2>Enter the Digital Market with Mark-it</h2>
+    <p>Make a presence of your brand online!</p>
+    <button class="cta-button" onclick="showEmail()">Get Started</button>
+    <p id="email-display" style="display: none; margin-top: 1rem; font-weight: bold;"></p>
+  </section>
+  <script>
+    function showEmail() {
+      const email = "mark.it.agencymarketing@gmail.com";
+      const emailDisplay = document.getElementById("email-display");
+      emailDisplay.textContent = `Contact us at: ${email}`;
+      emailDisplay.style.display = "block";
+    }
+  </script>
+
+
+  <section id="about" class="about-section">
+    <h2>About Us</h2>
+    <p>We are a passion driven brand with a peculiar design style with a sole motto of delivering the the best designs and growth to your buissness via our designing and handling approches towards the industry of our client.
+    </p>
+  </section>
+
+  <section id="services" class="services-section">
+    <h2>Our Services</h2>
+    <div class="service-cards">
+      <div class="card">
+        <h3>Social Media Marketing</h3>
+        <p>This includes the handling, ads running and the content creation of the following social media handles:-</p>
+        <p2>Instagram</p2>
+        <p3>Facebook</p3>
+        <p4>LinkedIn</p4>
+        <p5>YouTube</p5>
+      </div>
+      <div class="card">
+        <h3>Other Platforms</h3>
+        <p>This includes Google Ads, YouTube Ads, Content Creation for these ads and Basic Video Editing.</p>
+      </div>
+      <div class="card">
+        <h3>Web & Offline</h3>
+        <p>This include SEO Optimisation, Offline Advertisement Designing for brochures, visiting cards, etc. and Animated Video Editing.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <h2>Contact Details</h2>
+    <p>+91 74402 95575</p>
+    <p>+91 70007 73625</p>
+    </section>
+
+  <footer class="main-footer">
+    <p>&copy; 2024 Mark-It All rights reserved.</p>
+  </footer>
+</body>
+</html>
